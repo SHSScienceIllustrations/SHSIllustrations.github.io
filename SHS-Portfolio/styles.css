@@ -1,0 +1,411 @@
+/* General Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+h1,
+h2 {
+    margin: 0;
+    color: #ffffff;
+}
+
+p {
+    color: #9f9f9f;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* Navigation Styles */
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    /* Optional hover effect */
+}
+
+
+/* Hero Section */
+
+
+/* Hero Section */
+
+header .hero-text h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+header .hero-text h1 a:hover {
+    text-decoration: underline;
+}
+
+
+/* Change the color of the text below SHS Illustration */
+
+header .hero-text p {
+    color: #ffffff;
+    /* Change this to your desired color */
+}
+
+header.hero {
+    background-image: url(images/cover.png);
+    /* Replace with your image */
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+header .hero-text h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+header .hero-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+nav ul {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+
+/* About Section */
+
+section.about {
+    padding: 50px;
+    text-align: center;
+    background-color: #454545;
+}
+
+section.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+/* Portfolio Section */
+
+section.portfolio {
+    padding: 50px;
+    text-align: center;
+}
+
+.portfolio-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio-item {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(125, 125, 125);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+.portfolio-item .overlay h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.portfolio-item .overlay p {
+    margin-top: 10px;
+}
+
+
+/* Services Section */
+
+section.services {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+section.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service-item {
+    flex-basis: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    color: #555;
+}
+
+
+/* Service Links */
+
+.service-link {
+    display: block;
+    margin-top: 10px;
+    /* Adds some space above the link */
+    text-decoration: underline;
+    /* Ensures the link is underlined */
+    color: #4CAF50;
+    /* Change to your desired link color */
+    font-weight: bold;
+}
+
+.service-link:hover {
+    color: #2E7D32;
+    /* Optional: Change link color on hover */
+}
+
+
+/* Service Details Section */
+
+.service-details {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.service-details ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+
+/* Service Examples Section */
+
+.examples-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.examples-grid img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Change color for "About Our Education Services" heading and bullet points */
+
+#education-details h2 {
+    color: #333333;
+    /* Dark grey for the heading */
+}
+
+#education-details p,
+#education-details ul {
+    color: #555555;
+    /* Slightly lighter dark grey for paragraph and list */
+}
+
+#education-details ul li {
+    margin-bottom: 10px;
+    /* Adds space between list items for readability */
+}
+
+
+/* Dark grey for the section headings in service pages */
+
+.service-details h2 {
+    color: #333333;
+    /* Dark grey for the "About" headings */
+}
+
+
+/* Dark grey for the paragraphs and bullet points in service pages */
+
+.service-details p,
+.service-details ul,
+.service-details ul li {
+    color: #555555;
+    /* Slightly lighter dark grey for paragraphs and bullet points */
+}
+
+.service-details ul li {
+    margin-bottom: 10px;
+    /* Add spacing between bullet points */
+}
+
+
+/* Pricing Section */
+
+.service-pricing {
+    padding: 50px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.service-pricing ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.service-pricing li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Contact Section */
+
+
+/* Change the color of "Contact Us" in the Contact Section */
+
+section.contact h2 {
+    color: #333333;
+    /* Dark grey color */
+}
+
+
+/* Other styling for the contact button, etc. */
+
+.contact-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-button:hover {
+    background-color: #555;
+}
+
+section.contact {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: rgb(139, 139, 139);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.contact-button:hover {
+    background-color: #ffffff;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
